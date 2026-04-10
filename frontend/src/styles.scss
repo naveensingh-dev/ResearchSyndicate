@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+:root{
+  --void:#020609;
+  --surface:#080f1d;
+  --surface2:#0c1526;
+  --surface3:#111e33;
+  --border:rgba(255,255,255,.05);
+  --border2:rgba(255,255,255,.09);
+
+  --ink:#9ebdd8;
+  --ink-dim:#2e4a65;
+  --ink-ghost:#0d1a28;
+
+  --v:#6d28d9;
+  --vg:rgba(109,40,217,.2);
+  --vb:rgba(109,40,217,.4);
+  --vl:#a78bfa;
+
+  --a:#b45309;
+  --ag:rgba(180,83,9,.2);
+  --ab:rgba(180,83,9,.4);
+  --al:#fbbf24;
+
+  --e:#047857;
+  --eg:rgba(4,120,87,.2);
+  --eb:rgba(4,120,87,.4);
+  --el:#34d399;
+
+  --cyan:#0e7490;
+  --cyanl:#22d3ee;
+  --red:#ef4444;
+
+  --fn:'Bebas Neue',cursive;
+  --fm:'Share Tech Mono',monospace;
+  --fb:'Rajdhani',sans-serif;
+}
+
+html,body{
+  height:100%;width:100%;
+  background:var(--void);
+  color:var(--ink);
+  font-family:var(--fm);
+  overflow:hidden;
+  margin: 0;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.08);border-radius:2px;}

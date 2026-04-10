@@ -1,0 +1,9 @@
+crewai[tools]
+fastapi
+uvicorn
+google-generativeai
+langchain_google_genai
+python-dotenv
+google-search-results
+pydantic
+websockets
