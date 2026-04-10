@@ -1,91 +1,119 @@
-# ◈ ResearchSyndicate — Neural Command Interface
+<div align="center">
+  <img src="https://img.shields.io/badge/RESEARCH-SYNDICATE-6d28d9?style=for-the-badge&logo=ai&logoColor=white" alt="Research Syndicate Logo" />
+  <br/>
+  <h1>◈ NEURAL COMMAND INTERFACE ◈</h1>
+  <p><i>Autonomous Multi-Agent Market Intelligence Grid</i></p>
 
-[![Framework: CrewAI](https://img.shields.io/badge/Framework-CrewAI-v0.100?style=flat-square&color=6d28d9)](https://crewai.com)
-[![Engine: Gemini 1.5 Flash](https://img.shields.io/badge/Engine-Gemini_1.5_Flash-blue?style=flat-square&color=0e7490)](https://deepmind.google/technologies/gemini/)
-[![UI: Angular 20](https://img.shields.io/badge/UI-Angular_20-red?style=flat-square&color=dd0031)](https://angular.dev)
-
-> **Deploy a collaborative syndicate of autonomous agents to perform high-fidelity market intelligence gathering, strategic SWOT analysis, and executive brief synthesis in real-time.**
-
----
-
-## ⚡ The Syndicate Architecture
-
-ResearchSyndicate is a full-stack AI-powered command center. It orchestrates a "Crew" of specialized agents who communicate via a high-performance WebSocket grid to provide a live, immersive monitoring experience.
-
-### 🤖 Operative Profiles
-1.  **Researcher (Violet Clearance):** Elite intelligence gatherer. Uses SerpAPI to sweep the live web for market trends, competitor footprints, and raw data packages.
-2.  **Analyst (Amber Clearance):** Strategic processing unit. Transforms raw data into actionable intelligence, identifying market gaps and constructing comprehensive SWOT matrices.
-3.  **Writer (Green Clearance):** Executive narrative engine. Synthesizes complex strategic insights into a polished, 5-section Markdown report ready for C-suite consumption.
+  [![Framework: CrewAI](https://img.shields.io/badge/Framework-CrewAI-v0.100?style=for-the-badge&color=6d28d9)](https://crewai.com)
+  [![Engine: Gemini 1.5 Flash](https://img.shields.io/badge/Engine-Gemini_1.5_Flash-0e7490?style=for-the-badge)](https://deepmind.google/technologies/gemini/)
+  [![UI: Angular 20](https://img.shields.io/badge/UI-Angular_20-dd0031?style=for-the-badge)](https://angular.dev)
+</div>
 
 ---
 
-## 🛠 Tech Stack
-
-### Backend (Neural Grid)
-- **CrewAI:** Orchestrates agent roles, tasks, and multi-agent memory.
-- **FastAPI:** High-performance asynchronous bridge for REST and WebSockets.
-- **Google Gemini 1.5 Flash:** The underlying reasoning engine for high-speed, low-latency intelligence.
-- **LangChain:** Direct Google GenAI integration with `transport="rest"` for maximum reliability.
-
-### Frontend (Command Interface)
-- **Angular 20:** Modern standalone architecture with Signal-based state management.
-- **RxJS WebSockets:** Real-time stream synchronization for agent logs and status updates.
-- **Neural UI/UX:** Cyberpunk-themed interface with orbital animations, data flow pipes, and pulsating neural activity monitors.
+## ⚡ MISSION OBJECTIVE
+ResearchSyndicate is a sophisticated **Neural Command Interface** designed to orchestrate high-fidelity market research. By deploying a collaborative 'syndicate' of autonomous agents, the system sweeps the live web, processes raw data into strategic intelligence, and synthesizes executive-ready reports—all monitored through a real-time, cyberpunk-inspired command center.
 
 ---
 
-## 🚀 Deployment Protocol
+## 🕸 NEURAL TOPOLOGY
+The system operates on a linear high-speed data pipeline with active feedback loops:
 
-### 1. Backend Initialization
-```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+```mermaid
+graph LR
+    User([Command Input]) --> WS{Neural Grid}
+    WS --> Researcher[Violet Agent]
+    Researcher -- Raw Data --> Analyst[Amber Agent]
+    Analyst -- Insights --> Writer[Green Agent]
+    Writer -- MD Report --> WS
+    WS --> UI[Neural Interface]
+    
+    style Researcher fill:#6d28d9,stroke:#a78bfa,color:#fff
+    style Analyst fill:#b45309,stroke:#fbbf24,color:#fff
+    style Writer fill:#047857,stroke:#34d399,color:#fff
+    style UI fill:#020609,stroke:#9ebdd8,color:#9ebdd8
 ```
 
-### 2. Environment Configuration
-Create a `.env` file in the `backend/` directory:
+---
+
+## 🤖 OPERATIVE DOSSIERS
+
+### 🟣 RESEARCHER (VIOLET CLEARANCE)
+- **Role:** Deep-Web Intelligence Gathering.
+- **Primary Toolset:** SerpAPI / Google Search / Web Scrapers.
+- **Backstory:** Elite operative specialized in competitive landscape mapping and trend detection.
+- **Mission:** Extract raw signal from noise across the global digital footprint.
+
+### 🟠 ANALYST (AMBER CLEARANCE)
+- **Role:** Strategic Processing & SWOT Construction.
+- **Primary Toolset:** Cognitive Pattern Recognition / Gap Analysis.
+- **Backstory:** Senior strategist capable of identifying competitor weaknesses and market entry vectors.
+- **Mission:** Transform raw data packages into structured strategic intelligence.
+
+### 🟢 WRITER (GREEN CLEARANCE)
+- **Role:** Executive Synthesis & Narrative Design.
+- **Primary Toolset:** Narrative Engine / Markdown Optimization.
+- **Backstory:** Master communicator bridging the gap between technical data and C-suite decision-making.
+- **Mission:** Generate a 5-section high-fidelity intelligence report.
+
+---
+
+## 🛠 TECHNICAL FORTRESS
+
+### BACKEND (THE GRID)
+- **FastAPI Infrastructure:** Asynchronous core capable of handling high-volume background tasks.
+- **LiteLLM / Google GenAI:** Direct REST transport implementation for maximum reliability and bypass of gRPC restrictions.
+- **CrewAI Orchestration:** Sophisticated state management for agent handoffs and context preservation.
+- **WebSocket Gateway:** Low-latency bi-directional bridge for instantaneous log streaming.
+
+### FRONTEND (THE INTERFACE)
+- **Angular 20 Standalone:** Zero-boilerplate, ultra-fast component tree.
+- **Signal State Management:** Modern reactive patterns for real-time UI updates.
+- **Cyberpunk Aesthetics:** 
+  - **Orbital Animations:** Visualizing active neural processing.
+  - **Data Flow Pipes:** Real-time visualization of agent-to-agent handoffs.
+  - **Neural Scanlines:** Dynamic overlay effects for active operative cards.
+  - **Responsive Grid:** Fluid transitions between Desktop Command and Mobile Recon modes.
+
+---
+
+## 📡 COMMUNICATION PROTOCOL: SOCKET-FIRST
+ResearchSyndicate utilizes a high-performance **Socket-First** architecture. Unlike traditional REST applications, the mission deployment and feedback occur over a persistent secure tunnel:
+
+1. **Handshake:** UI establishes a WebSocket link to `ws://localhost:8000/ws`.
+2. **Uplink:** The command `DEPLOY_MISSION` is sent with the target topic.
+3. **Stream:** Agent "thoughts" are intercepted and broadcasted as live log entries.
+4. **Finalization:** The completed report is transmitted as a final payload, locking the UI into "Verified" state.
+
+---
+
+## 🚀 INITIALIZATION SEQUENCE
+
+### 1. Environmental Authorization
+Create `backend/.env`:
 ```env
-GOOGLE_API_KEY=your_gemini_key
+GOOGLE_API_KEY=your_google_ai_studio_key
 SERPAPI_API_KEY=your_serpapi_key
 ```
 
-### 3. Frontend Initialization
+### 2. Backend Boot
 ```bash
-cd frontend
-npm install
-```
-
-### 4. System Launch
-**Terminal 1 (Backend):**
-```bash
+cd backend
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
 python3 main.py
 ```
 
-**Terminal 2 (Frontend):**
+### 3. Frontend Link
 ```bash
+cd frontend
+npm install
 npm start
 ```
 
 ---
 
-## 📡 Core Communication Flow
-
-The system uses a **Socket-First** deployment strategy:
-1.  **Neural Uplink:** Frontend initiates a WebSocket handshake with the `ConnectionManager`.
-2.  **Command Injection:** The mission topic is sent as a `DEPLOY_MISSION` command over the socket.
-3.  **Real-time Streaming:** CrewAI's `step_callback` and `task_callback` intercept agent thoughts and dispatch them immediately to the UI.
-4.  **Intelligence Sync:** The final 5-section Markdown report is broadcasted upon mission completion.
-
----
-
-## 🛡 Security & Safety
-- **Clearance Protocols:** Each agent operates within its defined clearance (Violet, Amber, Green).
-- **Environment Isolation:** Keys are strictly managed via `.env` and never exposed to the client-side.
-
----
-
 <div align="center">
-  <p><i>Proprietary Intelligence Grid // ResearchSyndicate v1.0.0</i></p>
+  <p><b>PROPRIETARY ARCHITECTURE // MISSION CRITICAL</b></p>
+  <p><i>Constructed for High-Performance Intelligence Operations</i></p>
 </div>
